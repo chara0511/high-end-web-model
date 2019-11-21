@@ -21,8 +21,8 @@
 ul.bxslider {
   list-style: none;
 }
-/* puesto en verde por fallo
-.bx-viewport {
+/* puesto en verde por fallo*/
+/*.bx-viewport {
   /* fix other elements on the page moving (in Chrome) 
   -webkit-transform: translateZ(0);
 }
@@ -33,7 +33,8 @@ ul.bxslider {
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
-  bottom: 200px;
+  right: -35px;
+  bottom: 180px;
   width: 100%;
 }
 /* LOADER */
