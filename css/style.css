@@ -377,69 +377,104 @@ ul.social-icons.list-inline {
   padding-left: 5px;
 }
 
-.bx-pager .bx-default-pager{
+.bx-pager .bx-default-pager {
   margin-top: 50px !important;
 }
 
-#about-us .carousel-indicators{
+#about-us .carousel-indicators {
   position: static;
   padding-top: 30px;
 }
 
-#about-us .carousel-indicators li{
-  background-color:black;
-  width:12px;
-  height:12px;
-  margin-left:5px;
+#about-us .carousel-indicators li {
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
   background-image: url(../img/left-arrow.svg);
   padding: 25px;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
   background-image: url(../img/right-arrow.svg);
   padding: 25px;
 }
 
 #about-us .carousel-control-next,
-#about-us .carousel-control-prev{
+#about-us .carousel-control-prev {
   width: auto;
 }
 
-#about-us .carousel-control-next{
+#about-us .carousel-control-next {
   right: -35px;
 }
-#about-us .carousel-control-prev{
+#about-us .carousel-control-prev {
   left: -35px;
 }
-#about-us h3{
-  font-family: 'Oswald',sans-serif;
+#about-us h3 {
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 36px;
   font-weight: 600;
-  color:#6c757d !important;
+  color: #6c757d !important;
 }
 
-p.lead{
-  font-family: 'Roboto Condensed', sans-serif;
+p.lead {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 14px;
-  color:#f7cc4b !important;
+  color: #f7cc4b !important;
   font-weight: bold;
-
 }
 
-h4.text-dark{
-  font-family: 'Oswald', sans-serif;
+h4.text-dark {
+  font-family: "Oswald", sans-serif;
   font-size: 21px;
 }
 
-p.text-secondary{
-  font-family: 'Roboto Condensed', sans-serif;
-  color:darkgray;
+p.text-secondary {
+  font-family: "Roboto Condensed", sans-serif;
+  color: darkgray;
 }
 
-#contents{
-  margin-top: -395px;
+#contents {
+  margin-top: -425px;
+}
+
+#work h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 600;
+  color: grey !important;
+}
+
+.row.no-gutters [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
