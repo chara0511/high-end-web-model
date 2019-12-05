@@ -188,3 +188,19 @@ ul.bxslider {
   font-size: 0.85em;
   padding: 10px;
 }
+
+@media only all and (max-width: 823px){
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-pager,
+  .bx-wrapper .bx-controls-auto {
+  position: absolute;
+  right: -34%;
+  bottom: 50%;
+  width: 100%;
+}
+
+.bx-wrapper {
+  margin-bottom: 5%;
+}
+
+}
