@@ -94,7 +94,7 @@ html {
   left: 0;
   top: 0;
   height: 100%;
-  /* width cambiado de 100% a 101.5% para optimizar la scrollbar*/
+  /* width changed from 100% to 101.5% to optimize the scrollbar*/
   width: 101.5%;
   padding: 3.75rem;
   z-index: 99;
@@ -339,7 +339,7 @@ video#herovideo {
     box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
   }
 }
-/* sin pulso detenido al poner el cursor en el boton
+/* no pulse stopped when you put the cursor on the button
 #vidBtn{
   background: white;
   color:black;
@@ -489,6 +489,8 @@ display: block;
   margin-top: -565px;
 }
 
+/*------- SECTION : OUR WORK --------*/
+
 #work h3 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -497,9 +499,10 @@ display: block;
   color: grey !important;
 }
 
-.row.no-gutters [class*="col-"] {
-  padding-left: 0;
-  padding-right: 0;
+.row.no-gutters [class*=col-] {
+  padding: 0;
+  margin-top: -21px;
+  margin-right: -0.2px;
 }
 
 .img-wrapper {
@@ -929,6 +932,10 @@ a:hover {
   border: 5px solid #f1c30f;
 
 }
+
+
+
+
 
 /* ------responsive smartphone - 1er section--------*/ 
 
