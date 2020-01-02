@@ -85,8 +85,29 @@ $(document).ready(function() {
 
     $('.filtering').on( 'click', 'span', function() {
 
-        $(this).addClass('active').siblings().removeClass('active');
+        $(this).addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
 
     });
+
+
+    // section: Creative Portfolio 2
+
+    $("#news-slider").owlCarousel({
+      items:3,
+      itemsDesktop:[1199,3],
+      itemsDesktopSmall:[1000,2],
+      itemsMobile:[599,1],
+      pagination:false,
+      navigationText:false,
+      autoPlay:true,
+
+    });
+
+    // section: Numbers
+
+    $('.count').counterUp({
+    delay: 10,
+    time: 4000
+});
 
 });
