@@ -25,8 +25,8 @@ $(document).ready(function() {
     speed: 1200
   });
 
-  if($(".swiper-container").hasClass("team-member-slider")){
-    var swiper = new Swiper('.swiper-container', {
+  if ($(".swiper-container").hasClass("team-member-slider")) {
+    var swiper = new Swiper(".swiper-container", {
       slidesPerView: 3,
       allowTouchMove: true,
       loop: true,
@@ -36,8 +36,8 @@ $(document).ready(function() {
       grabcursor: true,
       autoplay: false,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
       },
       coverflow: {
         rotate: 0,
@@ -46,15 +46,17 @@ $(document).ready(function() {
         modifier: 1,
         slideShadows: false
       },
-      breakpoints:{
+      breakpoints: {
         767: {
-              slidesPerView: 1,
-              centeredSlides: false,
-              effect: "slide",
+          slidesPerView: 1,
+          centeredSlides: false,
+          effect: "slide"
         }
       }
     });
   }
+
+  // section: Our Work
 
   $("#work").magnificPopup({
     delegate: "a",
@@ -64,50 +66,82 @@ $(document).ready(function() {
     }
   });
 
-
-
-
-
-
-    var $gallery = $('.gallery').isotope({
-      // options
-    });
-  
+  var $gallery = $(".gallery").isotope({
+    // options
+  });
 
   // filter items on button click
-  $('.filtering').on( 'click', 'span', function() {
+  $(".filtering").on("click", "span", function() {
+    var filterValue = $(this).attr("data-filter");
 
-        var filterValue = $(this).attr('data-filter');
+    $gallery.isotope({ filter: filterValue });
+  });
 
-        $gallery.isotope({ filter: filterValue });
+  $(".filtering").on("click", "span", function() {
+    $(this)
+      .addClass("cbp-filter-item-active")
+      .siblings()
+      .removeClass("cbp-filter-item-active");
+  });
 
-    });
+  // section: Creative Portfolio 2
 
-    $('.filtering').on( 'click', 'span', function() {
+  $("#news-slider").owlCarousel({
+    items: 3,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [1000, 2],
+    itemsMobile: [599, 1],
+    pagination: false,
+    navigationText: false,
+    autoPlay: true
+  });
 
-        $(this).addClass('cbp-filter-item-active').siblings().removeClass('cbp-filter-item-active');
+  // section: Numbers
 
-    });
-
-
-    // section: Creative Portfolio 2
-
-    $("#news-slider").owlCarousel({
-      items:3,
-      itemsDesktop:[1199,3],
-      itemsDesktopSmall:[1000,2],
-      itemsMobile:[599,1],
-      pagination:false,
-      navigationText:false,
-      autoPlay:true,
-
-    });
-
-    // section: Numbers
-
-    $('.count').counterUp({
+  $(".count").counterUp({
     delay: 10,
     time: 4000
+  });
+
+  $("#clients-list").owlCarousel({
+    items: 6,
+    itemsDesktop: [1199, 6],
+    itemsDesktopSmall: [1000, 5],
+    itemsTablet: [768,4],
+    itemsMobile: [479, 2],
+    pagination: false,
+    navigationText: false,
+    autoPlay: true
+  });
+
+  
 });
 
-});
+ /*section: Our Happy Clients
+
+$(function(){
+  $("#clients-list").owlCarousel({
+    items:6,
+    autoPlay:false,
+    smartSpeed:700,
+    loop:true,
+    autoPlayHoverPause:true,
+    nav:false,
+    dots:false,
+    responsive:{
+      0:{
+        items:2
+      },
+
+      400:{
+        items:3
+      },
+
+      768:{
+        items:6
+      },
+    }
+  });
+
+});*/
+
