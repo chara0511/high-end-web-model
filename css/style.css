@@ -1358,13 +1358,26 @@ ul.social-list li a {
   .team-coverflow {
     max-width: 100%;
   }
+ 
 }
 /*section: Our Happy Clients*/
 
 @media only all and (max-width: 767px) {
   #clients-list {
-    margin: auto;
+    margin: auto ;
+    justify-content: center;
   }
+
+  #footer-menu a {
+  
+  font-size: 80%;
+  
+}
+
+#footer-copyrights p {
+  margin-top: 10%;
+  font-size: 75%;
+}
 }
 
 /*TINY SMARTPHONES*/
@@ -1372,4 +1385,9 @@ ul.social-list li a {
   #vidBtn {
     visibility: hidden;
   }
+   #footer-menu a {
+  
+  display: none;
+  
+}
 }
