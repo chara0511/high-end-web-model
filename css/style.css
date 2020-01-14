@@ -1117,6 +1117,136 @@ a:hover {
   display: inline-block !important;
 }
 
+/*--------Section: Footer --------*/
+
+footer {
+  background-color: #1c1c1d;
+  padding-top: 30px;
+  border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h2,
+#contact-right h3 {
+  color: white !important;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#contact-left p {
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#contact-info {
+  background-image: url(../img/world-map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+address {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+address strong {
+  font-size: 17px;
+}
+
+form .form-control {
+  background: transparent;
+  border-radius: 0;
+  border-color: white;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 8px 17px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#footer-bottom {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  margin-top: 59px;
+}
+
+#footer-copyrights p {
+  margin: 0;
+  color: white;
+}
+
+#footer-menu {
+  float: left;
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#footer-menu ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#footer-menu ul li {
+  display: inline-block;
+}
+
+#footer-menu a {
+  color: white;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+#footer-menu :hover {
+  color: orange;
+}
+
+ul.social-list {
+  display: flex;
+  color: white;
+}
+
+ul.social-list li a {
+  margin-right: 10px;
+  color: white;
+}
+
+#btn-white {
+  border-color: white;
+  color: white;
+}
+
+#btn.white:hover {
+  border-color: white;
+  color: #fff;
+}
+
+.btn-general {
+  border-width: 2px;
+  border-radius: 0;
+  padding: 12px 25px 12px 25px;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  border-color: white;
+}
+
+#footer-copyrights p {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* ------responsive smartphone - 1er section--------*/
 
 @media only all and (max-width: 823px) {
